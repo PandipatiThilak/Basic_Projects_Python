@@ -1,4 +1,4 @@
-Complete tasks quickly using the source code as a reference.
+
 BASIC Projects:
 Task 1 Simple To-Do List Application
 
