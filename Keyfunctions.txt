@@ -1,0 +1,73 @@
+Key Functions
+display_tasks():
+
+Purpose: Display the current list of tasks.
+Behavior:
+If the tasks list is empty, it prints "Your to-do list is empty."
+Otherwise, it prints each task with its status ("Done" or "Not Done").
+Parameters: None
+Returns: None
+add_task(task_name):
+
+Purpose: Add a new task to the to-do list.
+Behavior:
+Creates a dictionary with the task name and a completed status set to False.
+Appends this dictionary to the tasks list.
+Prints a confirmation message with the task name.
+Parameters:
+task_name (str): The name of the task to be added.
+Returns: None
+mark_completed(task_number):
+
+Purpose: Mark a specific task as completed.
+Behavior:
+Checks if the task number is valid (within the range of the tasks list).
+Sets the completed status of the specified task to True.
+Prints a confirmation message with the task number.
+If the task number is invalid, it prints an error message.
+Parameters:
+task_number (int): The number of the task to be marked as completed.
+Returns: None
+remove_task(task_number):
+
+Purpose: Remove a specific task from the to-do list.
+Behavior:
+Checks if the task number is valid (within the range of the tasks list).
+Removes the specified task from the tasks list.
+Prints a confirmation message with the task name.
+If the task number is invalid, it prints an error message.
+Parameters:
+task_number (int): The number of the task to be removed.
+Returns: None
+Main Program Loop
+Purpose: Provide a user interface to interact with the to-do list.
+Behavior:
+Displays a menu with options: Display to-do list, Add a task, Mark a task as completed, Remove a task, and Quit.
+Prompts the user for a choice and calls the appropriate function based on the input.
+Repeats until the user chooses to quit.
+Example Usage
+Display the to-do list:
+
+User selects option 1.
+Calls display_tasks().
+Add a task:
+
+User selects option 2.
+Prompts for the task name.
+Calls add_task(task_name) with the provided task name.
+Mark a task as completed:
+
+User selects option 3.
+Calls display_tasks() to show the current tasks.
+Prompts for the task number.
+Calls mark_completed(task_number) with the provided task number.
+Remove a task:
+
+User selects option 4.
+Calls display_tasks() to show the current tasks.
+Prompts for the task number.
+Calls remove_task(task_number) with the provided task number.
+Quit:
+
+User selects option 5.
+Exits the loop and ends the program.
