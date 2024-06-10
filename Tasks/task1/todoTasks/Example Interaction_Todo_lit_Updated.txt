@@ -1,0 +1,196 @@
+Example Interaction
+Main Menu Display
+Output:
+
+
+Options:
+1. Display to-do list
+2. Add a task
+3. Mark a task as completed
+4. Remove a task
+5. Quit
+Enter your choice: 
+Scenario 1: Displaying an Empty To-Do List
+Input:
+
+1
+Output:
+
+Your to-do list is empty.
+Scenario 2: Adding Tasks
+Input:
+
+
+2
+Enter the task: Buy groceries
+Output:
+
+Task 'Buy groceries' added to your to-do list.
+Input:
+
+
+2
+Enter the task: Call the doctor
+Output:
+
+
+Task 'Call the doctor' added to your to-do list.
+Scenario 3: Displaying the To-Do List with Tasks
+Input:
+
+1
+Output:
+
+To-Do List:
+1. Buy groceries (Not Done)
+2. Call the doctor (Not Done)
+Scenario 4: Marking a Task as Completed
+Input:
+
+
+3
+Output:
+
+
+To-Do List:
+1. Buy groceries (Not Done)
+2. Call the doctor (Not Done)
+Enter the task number to mark as completed: 
+Input:
+
+
+1
+Output:
+
+
+Task 1 marked as completed.
+Input:
+
+
+1
+Output:
+
+plaintext
+Copy code
+To-Do List:
+1. Buy groceries (Done)
+2. Call the doctor (Not Done)
+Scenario 5: Removing a Task
+Input:
+
+
+4
+Output:
+
+
+To-Do List:
+1. Buy groceries (Done)
+2. Call the doctor (Not Done)
+Enter the task number to remove: 
+Input:
+
+
+2
+Output:
+
+
+Task 'Call the doctor' removed from your to-do list.
+Input:
+
+
+1
+Output:
+
+
+To-Do List:
+1. Buy groceries (Done)
+Scenario 6: Handling Invalid Input (Non-numeric)
+Input:
+
+3
+Output:
+
+To-Do List:
+1. Buy groceries (Done)
+Enter the task number to mark as completed: 
+Input:
+
+abc
+Output:
+
+Invalid input. Please enter a number.
+Scenario 7: Exiting the Program
+Input:
+
+5
+Output:
+
+Goodbye!
+Full Example Session
+Here is a complete example session:
+
+Output:
+
+
+
+Options:
+1. Display to-do list
+2. Add a task
+3. Mark a task as completed
+4. Remove a task
+5. Quit
+Enter your choice: 
+Adding a Task:
+
+
+2
+Enter the task: Buy groceries
+Task 'Buy groceries' added to your to-do list.
+Adding Another Task:
+
+
+2
+Enter the task: Call the doctor
+Task 'Call the doctor' added to your to-do list.
+Displaying To-Do List:
+
+
+1
+To-Do List:
+1. Buy groceries (Not Done)
+2. Call the doctor (Not Done)
+Marking a Task as Completed:
+
+
+3
+To-Do List:
+1. Buy groceries (Not Done)
+2. Call the doctor (Not Done)
+Enter the task number to mark as completed: 1
+Task 1 marked as completed.
+Displaying To-Do List:
+
+
+1
+To-Do List:
+1. Buy groceries (Done)
+2. Call the doctor (Not Done)
+Removing a Task:
+
+
+4
+To-Do List:
+1. Buy groceries (Done)
+2. Call the doctor (Not Done)
+Enter the task number to remove: 2
+Task 'Call the doctor' removed from your to-do list.
+Displaying To-Do List:
+
+1
+To-Do List:
+1. Buy groceries (Done)
+Exiting the Program:
+
+5
+Goodbye!
+This example demonstrates the main interactions between the user and the to-do list program, illustrating how inputs are processed and how outputs are presented at each step.

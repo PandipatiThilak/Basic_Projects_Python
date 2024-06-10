@@ -1,0 +1,46 @@
+Key Functions
+intro():
+
+Purpose: Introduce the game to the player and prompt for their name.
+Behavior:
+Asks the player for their name and stores it in a variable.
+Displays a message explaining the game and instructs the player to start guessing.
+Parameters: None
+Returns: None
+pick():
+
+Purpose: Handle the main gameplay loop where the player guesses the number.
+Behavior:
+Initializes a variable guessesTaken to count the number of guesses.
+Runs a loop that allows the player to guess up to 6 times.
+Checks if the input is a valid number within the range 1 to 200.
+Provides feedback if the guess is too low, too high, or correct.
+Handles invalid inputs by prompting the user to enter a valid number.
+If the player guesses the correct number, it exits the loop and congratulates the player.
+If the player does not guess the correct number within 6 attempts, it reveals the number.
+Parameters: None
+Returns: None
+Main Program Loop
+Purpose: Control the flow of the game, allowing the player to play multiple rounds.
+Behavior:
+Initializes the variable playagain to "yes".
+Enters a loop that continues as long as the player wants to play again.
+Calls the intro() function to start a new game.
+Calls the pick() function to handle the guessing game.
+Asks the player if they want to play again and stores the response in playagain.
+Example Usage
+Introduction:
+
+Calls the intro() function.
+Asks for the player's name and explains the game.
+Guessing Game:
+
+Calls the pick() function.
+The player enters guesses, and the function provides feedback.
+If the player guesses correctly within 6 tries, they are congratulated.
+If the player does not guess correctly, the correct number is revealed.
+Play Again:
+
+After the game ends, asks the player if they want to play again.
+If the player responds with "yes" or "y", the game restarts.
+If the player responds with anything else, the game ends.
